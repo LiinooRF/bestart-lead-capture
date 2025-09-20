@@ -69,14 +69,14 @@ export function LeadCaptureForm({ onSuccess }: LeadCaptureFormProps) {
       <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 shadow-card">
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-2 mb-4">
-            <span className="text-2xl">📘</span>
-            <span className="text-bestart-white font-semibold">E-book Gratuito</span>
+            <span className="text-2xl">🎯</span>
+            <span className="text-bestart-white font-semibold">Descarga Gratis</span>
           </div>
           <h3 className="text-xl font-bold text-bestart-white mb-2">
-            7 Claves para Vender Bien tu Propiedad
+            Te lo envío al toque
           </h3>
           <p className="text-bestart-white/80 text-sm">
-            Guía práctica de Fernando Borjas W.
+            Solo necesito estos datos para mandártelo
           </p>
         </div>
 
@@ -141,8 +141,8 @@ export function LeadCaptureForm({ onSuccess }: LeadCaptureFormProps) {
               </div>
             ) : (
               <div className="flex items-center gap-2">
-                <span>📥</span>
-                Descargar E-book Gratis
+                <span>🚀</span>
+                Envíamelo ahora
               </div>
             )}
           </Button>
