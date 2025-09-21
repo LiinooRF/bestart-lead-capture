@@ -139,9 +139,6 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-bestart-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl text-bestart-dark">🎨</span>
-                </div>
                 <h3 className="text-xl font-bold text-bestart-dark mb-4">
                   El secreto de la pintura
                 </h3>
@@ -154,9 +151,6 @@ const Index = () => {
 
             <Card className="shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-bestart-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl text-bestart-dark">🔧</span>
-                </div>
                 <h3 className="text-xl font-bold text-bestart-dark mb-4">
                   Dónde SÍ invertir tu plata
                 </h3>
@@ -169,9 +163,6 @@ const Index = () => {
 
             <Card className="shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-bestart-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl text-bestart-dark">📸</span>
-                </div>
                 <h3 className="text-xl font-bold text-bestart-dark mb-4">
                   La primera impresión lo es todo
                 </h3>
