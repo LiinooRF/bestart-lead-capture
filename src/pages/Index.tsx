@@ -41,13 +41,21 @@ const Index = () => {
         {/* Bestart Logo - Top Left */}
         <div className="absolute top-8 left-8 z-20">
           <div className="flex items-center gap-3">
-            <span className="text-3xl font-bold text-bestart-white tracking-wider">BESTART</span>
+            <img 
+              src="/src/assets/bestart-logo-complete.png" 
+              alt="Bestart Propiedades" 
+              className="h-12 w-auto"
+            />
           </div>
         </div>
         
         <div className="relative z-10 max-w-6xl mx-auto text-center">
           <div className="inline-flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-white/30">
-            <span className="text-2xl">🏠</span>
+            <img 
+              src="/src/assets/bestart-logo-complete.png" 
+              alt="Bestart" 
+              className="h-8 w-auto"
+            />
             <span className="text-bestart-white font-semibold">De Fernando Borjas W.</span>
           </div>
           
@@ -107,9 +115,16 @@ const Index = () => {
 
       {/* Video Section - Only shows after form submission */}
       {showVideo && (
-        <section id="video-section" className="py-20 bg-bestart-muted">
+        <section id="video-section" className="py-20 bg-bestart-light">
           <div className="container mx-auto px-4">
             <div className="text-center mb-10">
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <img 
+                  src="/src/assets/bestart-logo-complete.png" 
+                  alt="Bestart" 
+                  className="h-8 w-auto"
+                />
+              </div>
               <h2 className="text-3xl font-bold text-bestart-dark mb-4">
                 Un mensaje especial para ti
               </h2>
@@ -128,6 +143,13 @@ const Index = () => {
       <section className="py-20 bg-bestart-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <img 
+                src="/src/assets/bestart-logo-complete.png" 
+                alt="Bestart" 
+                className="h-6 w-auto opacity-60"
+              />
+            </div>
             <h2 className="text-3xl font-bold text-bestart-dark mb-4">
               Mira, te voy a ser honesto...
             </h2>

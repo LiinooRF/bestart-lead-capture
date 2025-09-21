@@ -4,17 +4,12 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 items-center">
           <div className="text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
+            <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
               <img 
-                src="/src/assets/bestart-logo.png" 
-                alt="Bestart Logo" 
-                className="h-8 w-auto"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                  e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                }}
+                src="/src/assets/bestart-logo-complete.png" 
+                alt="Bestart Propiedades" 
+                className="h-10 w-auto"
               />
-              <span className="hidden text-2xl font-bold">BESTART</span>
             </div>
             <p className="text-bestart-light opacity-80">Transformando propiedades, cambiando vidas</p>
           </div>
