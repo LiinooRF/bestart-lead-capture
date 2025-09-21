@@ -68,10 +68,10 @@ export function LeadCaptureForm({ onSuccess }: LeadCaptureFormProps) {
     <div className="w-full max-w-md mx-auto">
       <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 shadow-card">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-2 mb-4">
-            <span className="text-2xl">🎯</span>
-            <span className="text-bestart-white font-semibold">Descarga Gratis</span>
-          </div>
+            <div className="inline-flex items-center gap-2 bg-bestart-primary/20 rounded-full px-4 py-2 mb-4 border border-bestart-primary/30">
+              <span className="text-2xl">🎯</span>
+              <span className="text-bestart-white font-semibold">Descarga Gratis</span>
+            </div>
           <h3 className="text-xl font-bold text-bestart-white mb-2">
             Te lo envío al toque
           </h3>
@@ -131,12 +131,12 @@ export function LeadCaptureForm({ onSuccess }: LeadCaptureFormProps) {
 
           <Button 
             type="submit" 
-            className="w-full bg-bestart-white text-bestart-primary hover:bg-white/90 font-bold py-4 px-6 text-lg rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-glow disabled:opacity-50 disabled:hover:scale-100"
+            className="w-full bg-bestart-primary text-bestart-dark hover:bg-bestart-primary/90 font-bold py-4 px-6 text-lg rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-glow disabled:opacity-50 disabled:hover:scale-100"
             disabled={isLoading}
           >
             {isLoading ? (
               <div className="flex items-center gap-2">
-                <div className="w-5 h-5 border-2 border-bestart-primary/30 border-t-bestart-primary rounded-full animate-spin"></div>
+                <div className="w-5 h-5 border-2 border-bestart-dark/30 border-t-bestart-dark rounded-full animate-spin"></div>
                 Enviando...
               </div>
             ) : (

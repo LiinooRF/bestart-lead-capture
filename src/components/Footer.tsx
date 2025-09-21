@@ -1,33 +1,44 @@
 export function Footer() {
   return (
-    <footer className="bg-bestart-primary text-bestart-white py-12">
+    <footer className="bg-bestart-dark text-bestart-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 items-center">
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold mb-2">BESTART</h3>
-            <p className="text-bestart-light opacity-80">Real Estate Excellence</p>
+            <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
+              <img 
+                src="/src/assets/bestart-logo.png" 
+                alt="Bestart Logo" 
+                className="h-8 w-auto"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                  e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                }}
+              />
+              <span className="hidden text-2xl font-bold">BESTART</span>
+            </div>
+            <p className="text-bestart-light opacity-80">Transformando propiedades, cambiando vidas</p>
           </div>
           
           <div className="text-center">
-            <h4 className="font-semibold mb-3">Contacto</h4>
+            <h4 className="font-semibold mb-3 text-bestart-primary">Contacto</h4>
             <div className="space-y-2 text-bestart-light opacity-90">
               <p>📧 info@bestart.cl</p>
-              <p>📱 +56 9 1234 5678</p>
-              <p>📍 Las Condes, Santiago</p>
+              <p>📱 +569 6796 8354</p>
+              <p>📍 Av. Libertador O'Higgins 4499</p>
             </div>
           </div>
           
           <div className="text-center md:text-right">
-            <h4 className="font-semibold mb-3">Síguenos</h4>
+            <h4 className="font-semibold mb-3 text-bestart-primary">Síguenos</h4>
             <div className="space-y-2 text-bestart-light opacity-90">
-              <p>LinkedIn: /bestart-chile</p>
-              <p>Instagram: @bestart.cl</p>
+              <p>YouTube: Fernando Borjas</p>
               <p>Web: www.bestart.cl</p>
+              <p>Correo: info@bestart.cl</p>
             </div>
           </div>
         </div>
         
-        <div className="border-t border-bestart-accent/30 mt-8 pt-6 text-center">
+        <div className="border-t border-bestart-primary/30 mt-8 pt-6 text-center">
           <p className="text-bestart-light opacity-70">
             © 2024 Bestart. Todos los derechos reservados. • Agente inmobiliario certificado
           </p>

@@ -29,12 +29,20 @@ const Index = () => {
       </head>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-hero overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute inset-0 bg-bestart-primary/90"></div>
+      <section className="relative min-h-screen flex items-center justify-center py-20 px-4 overflow-hidden">
+        {/* Background with Real Estate image */}
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-gradient-overlay"></div>
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-bestart-accent/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-bestart-accent/30 rounded-full blur-3xl animate-pulse delay-700"></div>
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-bestart-primary/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-bestart-primary/30 rounded-full blur-3xl animate-pulse delay-700"></div>
+        </div>
+        
+        {/* Bestart Logo - Top Left */}
+        <div className="absolute top-8 left-8 z-20">
+          <div className="flex items-center gap-3">
+            <span className="text-3xl font-bold text-bestart-white tracking-wider">BESTART</span>
+          </div>
         </div>
         
         <div className="relative z-10 max-w-6xl mx-auto text-center">
@@ -45,7 +53,7 @@ const Index = () => {
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-bestart-white mb-6 leading-tight">
             ¿Vendes tu casa?{" "}
-            <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-bestart-primary to-yellow-400 bg-clip-text text-transparent">
               Hazlo bien
             </span>
           </h1>
@@ -85,7 +93,7 @@ const Index = () => {
                   <a 
                     href="/7-claves-vender-propiedad.pdf" 
                     download
-                    className="inline-flex items-center gap-2 bg-bestart-white text-bestart-primary px-6 py-3 rounded-xl font-semibold hover:bg-bestart-white/90 transition-all duration-300"
+                    className="inline-flex items-center gap-2 bg-bestart-primary text-bestart-dark px-6 py-3 rounded-xl font-semibold hover:bg-bestart-primary/90 transition-all duration-300"
                   >
                     📥 Descargar E-book
                   </a>
@@ -102,10 +110,10 @@ const Index = () => {
         <section id="video-section" className="py-20 bg-bestart-muted">
           <div className="container mx-auto px-4">
             <div className="text-center mb-10">
-              <h2 className="text-3xl font-bold text-bestart-primary mb-4">
+              <h2 className="text-3xl font-bold text-bestart-dark mb-4">
                 Un mensaje especial para ti
               </h2>
-              <p className="text-bestart-text text-lg">
+              <p className="text-bestart-gray text-lg">
                 Conoce más sobre mi metodología y cómo puedo ayudarte
               </p>
             </div>
@@ -120,10 +128,10 @@ const Index = () => {
       <section className="py-20 bg-bestart-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-bestart-primary mb-4">
+            <h2 className="text-3xl font-bold text-bestart-dark mb-4">
               Mira, te voy a ser honesto...
             </h2>
-            <p className="text-lg text-bestart-text/80 max-w-3xl mx-auto">
+            <p className="text-lg text-bestart-gray/80 max-w-3xl mx-auto">
               La mayoría de vendedores cometen los mismos errores una y otra vez. 
               Aquí tienes exactamente qué hacer (y qué NO hacer).
             </p>
@@ -131,13 +139,13 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl text-bestart-white">🎨</span>
+                <div className="w-16 h-16 bg-bestart-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl text-bestart-dark">🎨</span>
                 </div>
-                <h3 className="text-xl font-bold text-bestart-primary mb-4">
+                <h3 className="text-xl font-bold text-bestart-dark mb-4">
                   El secreto de la pintura
                 </h3>
-                <p className="text-bestart-text leading-relaxed">
+                <p className="text-bestart-gray leading-relaxed">
                   Un cliente me aumentó el precio 8 millones solo pintando bien. 
                   Te explico exactamente qué colores usar y cuáles evitar.
                 </p>
@@ -146,13 +154,13 @@ const Index = () => {
 
             <Card className="shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl text-bestart-white">🔧</span>
+                <div className="w-16 h-16 bg-bestart-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl text-bestart-dark">🔧</span>
                 </div>
-                <h3 className="text-xl font-bold text-bestart-primary mb-4">
+                <h3 className="text-xl font-bold text-bestart-dark mb-4">
                   Dónde SÍ invertir tu plata
                 </h3>
-                <p className="text-bestart-text leading-relaxed">
+                <p className="text-bestart-gray leading-relaxed">
                   He visto gente gastar 5 millones en el jardín y descuidar el baño. 
                   Error grave. Te muestro las 3 zonas que SÍ venden.
                 </p>
@@ -161,13 +169,13 @@ const Index = () => {
 
             <Card className="shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl text-bestart-white">📸</span>
+                <div className="w-16 h-16 bg-bestart-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl text-bestart-dark">📸</span>
                 </div>
-                <h3 className="text-xl font-bold text-bestart-primary mb-4">
+                <h3 className="text-xl font-bold text-bestart-dark mb-4">
                   La primera impresión lo es todo
                 </h3>
-                <p className="text-bestart-text leading-relaxed">
+                <p className="text-bestart-gray leading-relaxed">
                   Una casa mal fotografiada puede tardar 6 meses más en venderse. 
                   Te doy mi checklist personal (la misma que uso con mis clientes).
                 </p>
@@ -177,11 +185,11 @@ const Index = () => {
           
           <div className="text-center mt-12">
             <div className="bg-bestart-muted/50 rounded-2xl p-8 max-w-2xl mx-auto">
-              <p className="text-lg text-bestart-text italic mb-2">
+              <p className="text-lg text-bestart-gray italic mb-2">
                 "Llevo 15 años en esto. He visto propiedades idénticas: una se vende en 2 semanas, 
                 la otra tarda 8 meses. La diferencia no es suerte."
               </p>
-              <p className="text-bestart-accent font-semibold">- Fernando</p>
+              <p className="text-bestart-primary font-semibold">- Fernando</p>
             </div>
           </div>
         </div>
