@@ -12,11 +12,13 @@ export function AgentSection() {
         {/* Header with logo */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <img 
-              src="/src/assets/bestart-logo-complete.png" 
-              alt="Bestart Propiedades" 
-              className="h-10 w-auto"
-            />
+            <div className="bg-bestart-dark rounded-xl px-4 py-2">
+              <img 
+                src="/src/assets/bestart-logo-complete.png" 
+                alt="Bestart Propiedades" 
+                className="h-10 w-auto brightness-0 invert"
+              />
+            </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-yellow bg-clip-text text-transparent mb-4">
             Fernando Borjas W.

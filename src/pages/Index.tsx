@@ -40,11 +40,11 @@ const Index = () => {
         
         {/* Bestart Logo - Top Left - Enhanced visibility */}
         <div className="absolute top-8 left-8 z-20">
-          <div className="bg-bestart-white/90 backdrop-blur-md rounded-2xl px-6 py-4 shadow-yellow border border-bestart-primary/20">
+          <div className="bg-bestart-dark/90 backdrop-blur-md rounded-2xl px-6 py-4 shadow-yellow border border-bestart-primary/20">
             <img 
               src="/src/assets/bestart-logo-complete.png" 
               alt="Bestart Propiedades" 
-              className="h-10 w-auto"
+              className="h-10 w-auto brightness-0 invert"
             />
           </div>
         </div>
@@ -119,11 +119,13 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-10">
               <div className="flex items-center justify-center gap-3 mb-6">
-                <img 
-                  src="/src/assets/bestart-logo-complete.png" 
-                  alt="Bestart" 
-                  className="h-8 w-auto"
-                />
+                <div className="bg-bestart-dark rounded-xl px-4 py-2">
+                  <img 
+                    src="/src/assets/bestart-logo-complete.png" 
+                    alt="Bestart" 
+                    className="h-8 w-auto brightness-0 invert"
+                  />
+                </div>
               </div>
               <h2 className="text-3xl font-bold text-bestart-dark mb-4">
                 Un mensaje especial para ti
@@ -144,11 +146,13 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-3 mb-6">
-              <img 
-                src="/src/assets/bestart-logo-complete.png" 
-                alt="Bestart" 
-                className="h-6 w-auto opacity-60"
-              />
+              <div className="bg-bestart-dark rounded-xl px-4 py-2">
+                <img 
+                  src="/src/assets/bestart-logo-complete.png" 
+                  alt="Bestart" 
+                  className="h-6 w-auto brightness-0 invert"
+                />
+              </div>
             </div>
             <h2 className="text-3xl font-bold text-bestart-dark mb-4">
               Mira, te voy a ser honesto...

@@ -8,7 +8,7 @@ export function Footer() {
               <img 
                 src="/src/assets/bestart-logo-complete.png" 
                 alt="Bestart Propiedades" 
-                className="h-10 w-auto"
+                className="h-10 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-bestart-light opacity-80">Transformando propiedades, cambiando vidas</p>
