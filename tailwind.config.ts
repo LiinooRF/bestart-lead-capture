@@ -47,9 +47,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Bestart Brand Colors - Real colors from bestart.cl
+        // Bestart Brand Colors - Modern & Enhanced
         bestart: {
           primary: "hsl(var(--bestart-primary))",
+          accent: "hsl(var(--bestart-accent))",
+          secondary: "hsl(var(--bestart-secondary))",
           dark: "hsl(var(--bestart-dark))",
           gray: "hsl(var(--bestart-gray))",
           light: "hsl(var(--bestart-light))",
@@ -70,11 +72,16 @@ export default {
         "gradient-primary": "var(--gradient-primary)",
         "gradient-accent": "var(--gradient-accent)",
         "gradient-overlay": "var(--gradient-overlay)",
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-card": "var(--gradient-card)",
+        "gradient-yellow": "var(--gradient-yellow)",
       },
       boxShadow: {
         elegant: "var(--shadow-elegant)",
         card: "var(--shadow-card)",
         glow: "var(--shadow-glow)",
+        yellow: "var(--shadow-yellow)",
+        soft: "var(--shadow-soft)",
       },
       borderRadius: {
         lg: "var(--radius)",

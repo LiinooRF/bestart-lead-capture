@@ -38,25 +38,25 @@ const Index = () => {
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-bestart-primary/30 rounded-full blur-3xl animate-pulse delay-700"></div>
         </div>
         
-        {/* Bestart Logo - Top Left */}
+        {/* Bestart Logo - Top Left - Enhanced visibility */}
         <div className="absolute top-8 left-8 z-20">
-          <div className="flex items-center gap-3">
+          <div className="bg-bestart-white/90 backdrop-blur-md rounded-2xl px-6 py-4 shadow-yellow border border-bestart-primary/20">
             <img 
               src="/src/assets/bestart-logo-complete.png" 
               alt="Bestart Propiedades" 
-              className="h-12 w-auto"
+              className="h-10 w-auto"
             />
           </div>
         </div>
         
         <div className="relative z-10 max-w-6xl mx-auto text-center">
-          <div className="inline-flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-white/30">
+          <div className="inline-flex items-center gap-4 bg-gradient-yellow backdrop-blur-sm rounded-full px-8 py-4 mb-8 border border-bestart-accent shadow-yellow">
             <img 
               src="/src/assets/bestart-logo-complete.png" 
               alt="Bestart" 
               className="h-8 w-auto"
             />
-            <span className="text-bestart-white font-semibold">De Fernando Borjas W.</span>
+            <span className="text-bestart-dark font-bold text-lg">Fernando Borjas W.</span>
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-bestart-white mb-6 leading-tight">

@@ -8,23 +8,29 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Bestart Brand Colors - Real colors from bestart.cl */
-    --bestart-primary: 44 96% 60%; /* #F2C94C - Golden yellow */
-    --bestart-dark: 0 0% 7%; /* #121212 - Dark background */
-    --bestart-gray: 0 0% 20%; /* #333333 - Text */
-    --bestart-light: 0 0% 96%; /* #F5F5F5 - Light sections */
-    --bestart-white: 0 0% 100%; /* #FFFFFF - White */
+    /* Bestart Brand Colors - Modern & Bold */
+    --bestart-primary: 44 96% 55%; /* #F2C94C - Golden yellow (main) */
+    --bestart-accent: 44 100% 65%; /* Brighter yellow for accents */
+    --bestart-secondary: 44 85% 45%; /* Darker yellow for depth */
+    --bestart-dark: 0 0% 5%; /* #0D0D0D - Pure dark */
+    --bestart-gray: 0 0% 18%; /* #2E2E2E - Modern gray */
+    --bestart-light: 44 15% 97%; /* Warm light with yellow tint */
+    --bestart-white: 0 0% 100%; /* #FFFFFF - Pure white */
     
-    /* Modern gradients - Bestart style */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--bestart-dark)), hsl(0, 0%, 15%));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--bestart-primary)), hsl(44, 96%, 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--bestart-dark)), rgba(0,0,0,0.8), hsl(var(--bestart-dark)));
-    --gradient-overlay: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+    /* Modern gradients with more yellow */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--bestart-dark)), hsl(var(--bestart-primary) / 0.1));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--bestart-primary)), hsl(var(--bestart-accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--bestart-dark)), rgba(242, 201, 76, 0.15), hsl(var(--bestart-dark)));
+    --gradient-overlay: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(242, 201, 76, 0.1), rgba(0, 0, 0, 0.6));
+    --gradient-card: linear-gradient(145deg, hsl(var(--bestart-white)), hsl(var(--bestart-light)));
+    --gradient-yellow: linear-gradient(135deg, hsl(var(--bestart-primary)), hsl(var(--bestart-accent)));
     
-    /* Elegant shadows */
-    --shadow-elegant: 0 20px 60px -10px hsl(var(--bestart-primary) / 0.3);
-    --shadow-glow: 0 0 40px hsl(var(--bestart-primary) / 0.4);
-    --shadow-card: 0 10px 40px -10px hsl(var(--bestart-primary) / 0.2);
+    /* Modern shadows with yellow accents */
+    --shadow-elegant: 0 25px 80px -15px hsl(var(--bestart-primary) / 0.4);
+    --shadow-glow: 0 0 60px hsl(var(--bestart-primary) / 0.5);
+    --shadow-card: 0 15px 50px -12px hsl(var(--bestart-primary) / 0.25);
+    --shadow-yellow: 0 8px 32px -8px hsl(var(--bestart-primary) / 0.6);
+    --shadow-soft: 0 4px 24px -4px hsl(var(--bestart-gray) / 0.1);
     
     /* Modern animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
