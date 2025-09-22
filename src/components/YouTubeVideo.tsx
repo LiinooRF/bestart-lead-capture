@@ -7,7 +7,7 @@ interface YouTubeVideoProps {
 
 export function YouTubeVideo({ 
   videoId = "dQw4w9WgXcQ", // Default video ID - should be replaced with actual agent video
-  title = "Mensaje del Agente Inmobiliario" 
+  title = "Mensaje" 
 }: YouTubeVideoProps) {
   return (
     <div className="w-full max-w-4xl mx-auto animate-in fade-in duration-1000">
