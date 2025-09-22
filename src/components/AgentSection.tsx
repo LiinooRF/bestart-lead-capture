@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import agentPhoto from "@/assets/agent-photo.jpg";
+import fernandoPhoto from "@/assets/fernando-borjas.jpg";
 
 export function AgentSection() {
   return (
@@ -50,25 +50,25 @@ export function AgentSection() {
                   {/* Description */}
                   <div className="space-y-6">
                     <p className="text-lg text-bestart-gray leading-relaxed">
-                      <span className="font-semibold text-bestart-primary">No soy un agente más.</span> 
-                      Soy alguien que ha visto todos los errores posibles y sabe exactamente qué funciona y qué no.
+                      <span className="font-semibold text-bestart-primary">Fundé Bestart</span> después de 15 años trabajando 
+                      en el mercado inmobiliario tradicional. Vi todos los errores que cometen los agentes y decidí hacer las cosas diferente.
                     </p>
                     
                     <p className="text-bestart-gray">
-                      He ayudado a cientos de personas a vender sus propiedades de forma rápida y rentable. 
-                      Mi metodología se basa en experiencia real, no en teoría.
+                      Mi enfoque es directo y honesto. No pierdo tu tiempo con técnicas que no funcionan. 
+                      Te digo exactamente qué hacer para vender rápido y bien.
                     </p>
                   </div>
 
                   {/* Specializations */}
                   <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-bestart-primary">Mi experiencia incluye:</h3>
+                    <h3 className="text-xl font-bold text-bestart-primary">En estos 15 años he dominado:</h3>
                     <div className="grid grid-cols-1 gap-3">
                       {[
-                        "Preparación estratégica de propiedades",
-                        "Fotografía y marketing inmobiliario",
-                        "Negociación y cierre de ventas",
-                        "Optimización de precios de venta"
+                        "Cómo preparar una propiedad para vender rápido",
+                        "Los errores más caros que cometen los vendedores",
+                        "Técnicas de negociación que realmente funcionan",
+                        "El precio exacto que debes poner (y cuándo subirlo)"
                       ].map((item, index) => (
                         <div key={index} className="flex items-center gap-3 p-4 bg-bestart-white rounded-xl shadow-soft border border-bestart-primary/10">
                           <div className="w-2 h-2 bg-gradient-yellow rounded-full"></div>
@@ -85,19 +85,19 @@ export function AgentSection() {
                 <div className="relative">
                   <div className="absolute -inset-4 bg-gradient-yellow rounded-3xl blur-xl opacity-30"></div>
                   <img 
-                    src={agentPhoto} 
-                    alt="Fernando Borjas W. - Agente Inmobiliario Bestart" 
+                    src={fernandoPhoto} 
+                    alt="Fernando Borjas W. - Fundador de Bestart Propiedades" 
                     className="relative w-80 h-96 object-cover rounded-2xl shadow-elegant border-4 border-bestart-white"
                   />
                   
                   {/* Floating badge */}
-                  <div className="absolute -bottom-6 -right-6 bg-gradient-yellow text-bestart-dark px-6 py-4 rounded-2xl shadow-yellow border-4 border-bestart-white">
+                  <div className="absolute -bottom-6 -right-6 bg-bestart-dark text-bestart-primary px-6 py-4 rounded-2xl shadow-yellow border-4 border-bestart-white">
                     <div className="text-center">
-                      <div className="text-sm font-medium">Certificado por</div>
+                      <div className="text-sm font-medium text-bestart-white">Fundador de</div>
                       <img 
                         src="/src/assets/bestart-logo-complete.png" 
                         alt="Bestart" 
-                        className="h-6 w-auto mx-auto mt-1"
+                        className="h-6 w-auto mx-auto mt-1 brightness-0 invert"
                       />
                     </div>
                   </div>
@@ -110,11 +110,11 @@ export function AgentSection() {
         {/* Bottom quote */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-yellow text-bestart-dark rounded-2xl p-8 max-w-3xl mx-auto shadow-yellow">
-            <blockquote className="text-xl font-medium italic mb-4">
-              "En 15 años he visto propiedades idénticas: una se vende en 2 semanas, la otra tarda 8 meses. 
-              La diferencia no es suerte, es saber qué hacer."
+            <blockquote className="text-xl font-medium mb-4">
+              "Después de 15 años vendiendo propiedades, decidí crear Bestart para hacer las cosas como deben ser: 
+              rápido, honesto y rentable para el vendedor."
             </blockquote>
-            <div className="font-bold">- Fernando Borjas W.</div>
+            <div className="font-bold">- Fernando Borjas W., Fundador de Bestart</div>
           </div>
         </div>
       </div>
