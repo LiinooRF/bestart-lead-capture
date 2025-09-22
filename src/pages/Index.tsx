@@ -170,7 +170,7 @@ const Index = () => {
                   El secreto de la pintura
                 </h3>
                 <p className="text-bestart-gray leading-relaxed">
-                  Un cliente me aumentó el precio solo pintando bien. 
+                  Un cliente aumentó el precio solo pintando bien. 
                   Te explico exactamente qué colores usar y cuáles evitar.
                 </p>
               </CardContent>
