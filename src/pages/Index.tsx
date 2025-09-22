@@ -170,7 +170,7 @@ const Index = () => {
                   El secreto de la pintura
                 </h3>
                 <p className="text-bestart-gray leading-relaxed">
-                  Un cliente me aumentó el precio 8 millones solo pintando bien. 
+                  Un cliente me aumentó el precio solo pintando bien. 
                   Te explico exactamente qué colores usar y cuáles evitar.
                 </p>
               </CardContent>
@@ -182,7 +182,7 @@ const Index = () => {
                   Dónde SÍ invertir tu plata
                 </h3>
                 <p className="text-bestart-gray leading-relaxed">
-                  He visto gente gastar 5 millones en el jardín y descuidar el baño. 
+                  He visto gente gastar millones en el jardín y descuidar el baño. 
                   Error grave. Te muestro las 3 zonas que SÍ venden.
                 </p>
               </CardContent>
