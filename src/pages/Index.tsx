@@ -118,23 +118,6 @@ const Index = () => {
       {showVideo && (
         <section id="video-section" className="py-20 bg-bestart-light">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-10">
-              <div className="flex items-center justify-center gap-3 mb-6">
-                <div className="bg-bestart-dark rounded-xl px-4 py-2">
-                  <img 
-                    src="/bestart-logo-complete.png" 
-                    alt="Bestart" 
-                    className="h-8 w-auto brightness-0 invert"
-                  />
-                </div>
-              </div>
-              <h2 className="text-3xl font-bold text-bestart-dark mb-4">
-                Un mensaje especial para ti
-              </h2>
-              <p className="text-bestart-gray text-lg">
-                Conoce más sobre mi metodología y cómo puedo ayudarte
-              </p>
-            </div>
           </div>
         </section>
       )}
