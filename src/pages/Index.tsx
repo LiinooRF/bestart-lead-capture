@@ -10,12 +10,6 @@ const Index = () => {
 
   const handleFormSuccess = () => {
     setShowVideo(true);
-    // Scroll to video section
-    setTimeout(() => {
-      document.getElementById('video-section')?.scrollIntoView({ 
-        behavior: 'smooth' 
-      });
-    }, 100);
   };
 
   return (
