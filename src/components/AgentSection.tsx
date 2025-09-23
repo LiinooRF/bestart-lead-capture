@@ -14,15 +14,18 @@ export function AgentSection() {
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="bg-bestart-dark rounded-xl px-4 py-2">
               <img 
-                src="/src/assets/bestart-logo-complete.png" 
+                src="/bestart-logo-complete.png" 
                 alt="Bestart Propiedades" 
                 className="h-10 w-auto brightness-0 invert"
               />
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-yellow bg-clip-text text-transparent mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-yellow bg-clip-text text-transparent mb-2">
             Fernando Borjas W.
           </h2>
+          <p className="text-lg font-semibold text-bestart-primary mb-4">
+            Constructor Civil • Ingeniero Industrial
+          </p>
           <p className="text-xl text-bestart-gray max-w-2xl mx-auto">
             Tu experto en propiedades con más de 15 años transformando el mercado inmobiliario
           </p>
@@ -96,8 +99,8 @@ export function AgentSection() {
                   <div className="absolute -bottom-6 -right-6 bg-bestart-dark text-bestart-primary px-6 py-4 rounded-2xl shadow-yellow border-4 border-bestart-white">
                     <div className="text-center">
                       <div className="text-sm font-medium text-bestart-white">Fundador de</div>
-                      <img 
-                        src="/src/assets/bestart-logo-complete.png" 
+        <img 
+                        src="/bestart-logo-complete.png" 
                         alt="Bestart" 
                         className="h-6 w-auto mx-auto mt-1 brightness-0 invert"
                       />

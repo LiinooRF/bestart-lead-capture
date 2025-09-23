@@ -42,7 +42,7 @@ const Index = () => {
         <div className="absolute top-8 left-8 z-20">
           <div className="backdrop-blur-sm rounded-2xl px-6 py-4">
             <img 
-              src="/src/assets/bestart-logo-complete.png" 
+              src="/bestart-logo-complete.png" 
               alt="Bestart Propiedades" 
               className="h-10 w-auto drop-shadow-lg"
               style={{ filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.8))' }}
@@ -53,7 +53,7 @@ const Index = () => {
         <div className="relative z-10 max-w-6xl mx-auto text-center">
           <div className="inline-flex items-center gap-4 bg-gradient-yellow backdrop-blur-sm rounded-full px-8 py-4 mb-8 border border-bestart-accent shadow-yellow">
             <img 
-              src="/src/assets/bestart-logo-complete.png" 
+              src="/bestart-logo-complete.png" 
               alt="Bestart" 
               className="h-8 w-auto"
             />
@@ -122,7 +122,7 @@ const Index = () => {
               <div className="flex items-center justify-center gap-3 mb-6">
                 <div className="bg-bestart-dark rounded-xl px-4 py-2">
                   <img 
-                    src="/src/assets/bestart-logo-complete.png" 
+                    src="/bestart-logo-complete.png" 
                     alt="Bestart" 
                     className="h-8 w-auto brightness-0 invert"
                   />
@@ -149,7 +149,7 @@ const Index = () => {
             <div className="flex items-center justify-center gap-3 mb-6">
               <div className="bg-bestart-dark rounded-xl px-4 py-2">
                 <img 
-                  src="/src/assets/bestart-logo-complete.png" 
+                  src="/bestart-logo-complete.png" 
                   alt="Bestart" 
                   className="h-6 w-auto brightness-0 invert"
                 />

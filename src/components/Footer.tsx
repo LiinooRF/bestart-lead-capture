@@ -6,7 +6,7 @@ export function Footer() {
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
               <img 
-                src="/src/assets/bestart-logo-complete.png" 
+                src="/bestart-logo-complete.png" 
                 alt="Bestart Propiedades" 
                 className="h-10 w-auto brightness-0 invert"
               />
