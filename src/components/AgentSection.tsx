@@ -27,7 +27,7 @@ export function AgentSection() {
             Constructor Civil • Ingeniero Industrial
           </p>
           <p className="text-xl text-bestart-gray max-w-2xl mx-auto">
-            Tu experto en propiedades con más de 15 años transformando el mercado inmobiliario
+            Tu experto en propiedades con más de 7 años transformando el mercado inmobiliario
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export function AgentSection() {
                   {/* Stats */}
                   <div className="grid grid-cols-2 gap-6">
                     <div className="text-center p-6 bg-gradient-yellow rounded-2xl text-bestart-dark">
-                      <div className="text-3xl font-bold">15+</div>
+                      <div className="text-3xl font-bold">7+</div>
                       <div className="text-sm font-medium">Años de experiencia</div>
                     </div>
                     <div className="text-center p-6 bg-bestart-white rounded-2xl shadow-soft border border-bestart-primary/10">
@@ -55,7 +55,7 @@ export function AgentSection() {
                   {/* Description */}
                   <div className="space-y-6">
                     <p className="text-lg text-bestart-gray leading-relaxed">
-                      <span className="font-semibold text-bestart-primary">Fundé Bestart</span> después de 15 años trabajando 
+                      <span className="font-semibold text-bestart-primary">Fundé Bestart</span> después de 7 años trabajando 
                       en el mercado inmobiliario tradicional. Vi todos los errores que cometen los agentes y decidí hacer las cosas diferente.
                     </p>
                     
@@ -67,7 +67,7 @@ export function AgentSection() {
 
                   {/* Specializations */}
                   <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-bestart-primary">En estos 15 años he dominado:</h3>
+                    <h3 className="text-xl font-bold text-bestart-primary">En estos 7 años he dominado:</h3>
                     <div className="grid grid-cols-1 gap-3">
                       {[
                         "Cómo preparar una propiedad para vender rápido",
@@ -116,7 +116,7 @@ export function AgentSection() {
         <div className="mt-16 text-center">
           <div className="bg-gradient-yellow text-bestart-dark rounded-2xl p-8 max-w-3xl mx-auto shadow-yellow">
             <blockquote className="text-xl font-medium mb-4">
-              "Después de 15 años vendiendo propiedades, decidí crear Bestart para hacer las cosas como deben ser: 
+              "Después de 7 años vendiendo propiedades, decidí crear Bestart para hacer las cosas como deben ser: 
               rápido, honesto y rentable para el vendedor."
             </blockquote>
             <div className="font-bold">- Fernando Borjas W., Fundador de Bestart</div>

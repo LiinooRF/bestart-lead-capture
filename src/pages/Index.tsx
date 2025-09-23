@@ -62,7 +62,7 @@ const Index = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-bestart-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Después de 15 años vendiendo propiedades, he visto todos los errores posibles.
+            Después de 7 años vendiendo propiedades, he visto todos los errores posibles.
           </p>
           
           <p className="text-lg md:text-xl text-bestart-white/80 mb-12 max-w-3xl mx-auto">
@@ -181,7 +181,7 @@ const Index = () => {
           <div className="text-center mt-12">
             <div className="bg-bestart-muted/50 rounded-2xl p-8 max-w-2xl mx-auto">
               <p className="text-lg text-bestart-gray italic mb-2">
-                "Llevo 15 años en esto. He visto propiedades idénticas: una se vende en 2 semanas, 
+                "Llevo 7 años en esto. He visto propiedades idénticas: una se vende en 2 semanas, 
                 la otra tarda 8 meses. La diferencia no es suerte."
               </p>
               <p className="text-bestart-primary font-semibold">- Fernando</p>
