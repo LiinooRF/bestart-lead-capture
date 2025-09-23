@@ -17,9 +17,9 @@ export function Footer() {
           <div className="text-center">
             <h4 className="font-semibold mb-3 text-bestart-primary">Contacto</h4>
             <div className="space-y-2 text-bestart-light opacity-90">
-              <p>📧 info@bestart.cl</p>
+              <p>📧 contacto@bestart.cl</p>
               <p>📱 +569 6796 8354</p>
-              <p>📍 Av. Libertador O'Higgins 4499</p>
+              <p>📍 Santiago de Chile</p>
             </div>
           </div>
           
@@ -28,14 +28,14 @@ export function Footer() {
             <div className="space-y-2 text-bestart-light opacity-90">
               <p>YouTube: Fernando Borjas</p>
               <p>Web: www.bestart.cl</p>
-              <p>Correo: info@bestart.cl</p>
+              <p>Correo: contacto@bestart.cl</p>
             </div>
           </div>
         </div>
         
         <div className="border-t border-bestart-primary/30 mt-8 pt-6 text-center">
           <p className="text-bestart-light opacity-70">
-            © 2024 Bestart. Todos los derechos reservados. • Agente inmobiliario certificado
+            © 2025 Bestart. Todos los derechos reservados. • Agente inmobiliario certificado
           </p>
         </div>
       </div>
