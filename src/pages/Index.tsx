@@ -32,13 +32,13 @@ const Index = () => {
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-bestart-primary/30 rounded-full blur-3xl animate-pulse delay-700"></div>
         </div>
         
-        {/* Bestart Logo - Top Left - Transparent */}
-        <div className="absolute top-8 left-8 z-20">
-          <div className="backdrop-blur-sm rounded-2xl px-6 py-4">
+        {/* Bestart Logo - Top Left - Responsive positioning */}
+        <div className="absolute top-4 left-4 md:top-8 md:left-8 z-20">
+          <div className="backdrop-blur-sm rounded-2xl px-3 py-2 md:px-6 md:py-4">
             <img 
               src="/bestart-logo-complete.png" 
               alt="Bestart Propiedades" 
-              className="h-10 w-auto drop-shadow-lg"
+              className="h-6 md:h-10 w-auto drop-shadow-lg"
               style={{ filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.8))' }}
             />
           </div>
