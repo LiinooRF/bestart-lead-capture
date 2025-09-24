@@ -57,7 +57,7 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-bestart-white mb-6 leading-tight">
             ¿Vendes tu casa?{" "}
             <span className="bg-gradient-to-r from-bestart-primary to-yellow-400 bg-clip-text text-transparent">
-              Mejora tu venta con estos consejos
+              Mejore su venta con estos consejos
             </span>
           </h1>
           
