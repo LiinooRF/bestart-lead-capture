@@ -33,22 +33,38 @@ export function LeadCaptureForm({ onSuccess }: LeadCaptureFormProps) {
     setIsLoading(true);
 
     try {
-      // Simulate form submission - in real app this would save to Supabase
-      console.log("Lead captured:", formData);
+      console.log("Submitting lead:", formData);
       
-      // Simulate API delay
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      // Submit to Supabase Edge Function
+      const response = await fetch('https://krxwrvfvsxwmluctdfal.supabase.co/functions/v1/submit-lead', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Error al procesar la solicitud');
+      }
+
+      console.log('Lead submission successful:', result);
       
       toast({
         title: "¡Perfecto!",
-        description: "Te hemos enviado el e-book a tu correo electrónico",
+        description: result.message || "Te hemos enviado el e-book a tu correo electrónico",
       });
 
+      // Reset form
+      setFormData({ name: "", email: "", phone: "" });
       onSuccess();
-    } catch (error) {
+    } catch (error: any) {
+      console.error('Lead submission error:', error);
       toast({
         title: "Error",
-        description: "Hubo un problema. Por favor intenta nuevamente.",
+        description: error.message || "Hubo un problema. Por favor intenta nuevamente.",
         variant: "destructive",
       });
     } finally {
