@@ -102,40 +102,67 @@ const handler = async (req: Request): Promise<Response> => {
     // Email to user with PDF links
     const userEmailHtml = `
       <html>
-        <body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-          <div style="text-align: center; margin-bottom: 30px;">
-            <h1 style="color: #2563eb;">¡Gracias por tu interés, ${name}!</h1>
-          </div>
-          
-          <p style="font-size: 16px; line-height: 1.6;">
-            Hola ${name},
-          </p>
-          
-          <p style="font-size: 16px; line-height: 1.6;">
-            Te agradecemos tu interés en nuestro contenido. Como prometimos, aquí tienes acceso a nuestros recursos gratuitos:
-          </p>
-          
-          <div style="background: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            ${googleDriveLinks.map(link => `
-              <p style="margin: 10px 0;">
-                📄 <strong>${link.title}</strong><br>
-                <a href="${link.url}" style="color: #2563eb; text-decoration: none; font-weight: 500;">
-                  Descargar aquí →
-                </a>
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; background-color: #0D0D0D; color: #2E2E2E;">
+          <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+            <!-- Header with Bestart branding -->
+            <div style="background: linear-gradient(135deg, #0D0D0D, rgba(242, 201, 76, 0.15), #0D0D0D); padding: 40px 30px; text-align: center;">
+              <div style="background-color: #F2C94C; display: inline-block; padding: 15px 30px; border-radius: 8px; margin-bottom: 20px;">
+                <h1 style="margin: 0; color: #0D0D0D; font-size: 24px; font-weight: 700; letter-spacing: 2px;">BESTART</h1>
+              </div>
+              <h2 style="margin: 0; color: #F2C94C; font-size: 28px; font-weight: 600;">¡Gracias por tu interés, ${name}!</h2>
+            </div>
+            
+            <!-- Main content -->
+            <div style="padding: 40px 30px;">
+              <p style="font-size: 18px; line-height: 1.6; color: #2E2E2E; margin-bottom: 20px;">
+                Hola <strong>${name}</strong>,
               </p>
-            `).join('')}
-          </div>
-          
-          <p style="font-size: 16px; line-height: 1.6;">
-            Esperamos que este contenido te sea de gran utilidad. Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.
-          </p>
-          
-          <div style="border-top: 2px solid #e5e7eb; margin-top: 30px; padding-top: 20px; text-align: center;">
-            <p style="color: #6b7280; font-size: 14px;">
-              Saludos,<br>
-              <strong>Fernando Borjas W.</strong><br>
-              Bestart Propiedades
-            </p>
+              
+              <p style="font-size: 16px; line-height: 1.6; color: #2E2E2E; margin-bottom: 30px;">
+                Te agradecemos tu interés en nuestro contenido. Como prometimos, hemos enviado a tu Google Drive el acceso a nuestros recursos gratuitos:
+              </p>
+              
+              <!-- Resource card -->
+              <div style="background: linear-gradient(145deg, #ffffff, #fef7e0); border: 2px solid #F2C94C; border-radius: 12px; padding: 30px; margin: 30px 0; text-align: center; box-shadow: 0 8px 32px -8px rgba(242, 201, 76, 0.6);">
+                ${googleDriveLinks.map(link => `
+                  <div style="margin-bottom: 20px;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">📚</div>
+                    <h3 style="color: #0D0D0D; font-size: 20px; font-weight: 600; margin: 0 0 15px 0;">${link.title}</h3>
+                    <p style="color: #2E2E2E; font-size: 14px; margin-bottom: 20px;">El enlace ha sido enviado a tu Google Drive</p>
+                    <a href="${link.url}" style="display: inline-block; background: linear-gradient(135deg, #F2C94C, #f7d464); color: #0D0D0D; text-decoration: none; font-weight: 600; padding: 15px 30px; border-radius: 8px; font-size: 16px; transition: all 0.3s ease;">
+                      📥 Acceder al Google Drive →
+                    </a>
+                  </div>
+                `).join('')}
+              </div>
+              
+              <p style="font-size: 16px; line-height: 1.6; color: #2E2E2E; margin-bottom: 30px;">
+                Esperamos que este contenido te sea de gran utilidad. Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.
+              </p>
+              
+              <!-- Contact info -->
+              <div style="background-color: #fef7e0; padding: 25px; border-radius: 8px; text-align: center; margin-top: 40px;">
+                <p style="color: #2E2E2E; font-size: 16px; margin: 0 0 10px 0;">
+                  <strong style="color: #0D0D0D;">Fernando Borjas W.</strong><br>
+                  Agente Inmobiliario<br>
+                  <span style="color: #F2C94C; font-weight: 600;">Bestart Propiedades</span>
+                </p>
+              </div>
+            </div>
+            
+            <!-- Footer -->
+            <div style="background-color: #0D0D0D; padding: 30px; text-align: center;">
+              <div style="background-color: #F2C94C; display: inline-block; padding: 8px 16px; border-radius: 4px; margin-bottom: 15px;">
+                <span style="color: #0D0D0D; font-weight: 700; font-size: 14px; letter-spacing: 1px;">BESTART</span>
+              </div>
+              <p style="color: #F2C94C; font-size: 14px; margin: 0;">
+                Tu socio de confianza en bienes raíces
+              </p>
+            </div>
           </div>
         </body>
       </html>
@@ -144,24 +171,68 @@ const handler = async (req: Request): Promise<Response> => {
     // Email to admin with lead information
     const adminEmailHtml = `
       <html>
-        <body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-          <h2 style="color: #dc2626;">🎯 Nuevo Lead Capturado</h2>
-          
-          <div style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px; margin: 20px 0;">
-            <h3 style="margin-top: 0; color: #374151;">Información del Lead:</h3>
-            <ul style="list-style: none; padding: 0;">
-              <li style="margin: 8px 0;"><strong>Nombre:</strong> ${name}</li>
-              <li style="margin: 8px 0;"><strong>Email:</strong> <a href="mailto:${email}">${email}</a></li>
-              <li style="margin: 8px 0;"><strong>Teléfono:</strong> <a href="tel:${phone}">${phone}</a></li>
-              <li style="margin: 8px 0;"><strong>IP:</strong> ${clientIP}</li>
-              <li style="margin: 8px 0;"><strong>Fecha:</strong> ${new Date().toLocaleString('es-ES')}</li>
-              <li style="margin: 8px 0;"><strong>ID en BD:</strong> ${leadData.id}</li>
-            </ul>
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; background-color: #f5f5f5;">
+          <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 24px -4px rgba(46, 46, 46, 0.1);">
+            
+            <!-- Header -->
+            <div style="background: linear-gradient(135deg, #0D0D0D, rgba(242, 201, 76, 0.15), #0D0D0D); padding: 30px; text-align: center;">
+              <div style="background-color: #F2C94C; display: inline-block; padding: 10px 20px; border-radius: 6px; margin-bottom: 15px;">
+                <h1 style="margin: 0; color: #0D0D0D; font-size: 18px; font-weight: 700; letter-spacing: 1px;">BESTART</h1>
+              </div>
+              <h2 style="margin: 0; color: #F2C94C; font-size: 24px; font-weight: 600;">🎯 Nuevo Lead Capturado</h2>
+            </div>
+            
+            <!-- Content -->
+            <div style="padding: 30px;">
+              <div style="background: linear-gradient(145deg, #fef7e0, #ffffff); border: 2px solid #F2C94C; border-radius: 8px; padding: 25px; margin-bottom: 20px;">
+                <h3 style="margin: 0 0 20px 0; color: #0D0D0D; font-size: 18px;">Información del Lead:</h3>
+                <div style="display: grid; gap: 12px;">
+                  <div style="display: flex; padding: 8px 0; border-bottom: 1px solid #f0f0f0;">
+                    <strong style="color: #2E2E2E; min-width: 100px;">Nombre:</strong>
+                    <span style="color: #0D0D0D;">${name}</span>
+                  </div>
+                  <div style="display: flex; padding: 8px 0; border-bottom: 1px solid #f0f0f0;">
+                    <strong style="color: #2E2E2E; min-width: 100px;">Email:</strong>
+                    <a href="mailto:${email}" style="color: #F2C94C; text-decoration: none;">${email}</a>
+                  </div>
+                  <div style="display: flex; padding: 8px 0; border-bottom: 1px solid #f0f0f0;">
+                    <strong style="color: #2E2E2E; min-width: 100px;">Teléfono:</strong>
+                    <a href="tel:${phone}" style="color: #F2C94C; text-decoration: none;">${phone}</a>
+                  </div>
+                  <div style="display: flex; padding: 8px 0; border-bottom: 1px solid #f0f0f0;">
+                    <strong style="color: #2E2E2E; min-width: 100px;">IP:</strong>
+                    <span style="color: #0D0D0D;">${clientIP}</span>
+                  </div>
+                  <div style="display: flex; padding: 8px 0; border-bottom: 1px solid #f0f0f0;">
+                    <strong style="color: #2E2E2E; min-width: 100px;">Fecha:</strong>
+                    <span style="color: #0D0D0D;">${new Date().toLocaleString('es-ES')}</span>
+                  </div>
+                  <div style="display: flex; padding: 8px 0;">
+                    <strong style="color: #2E2E2E; min-width: 100px;">ID en BD:</strong>
+                    <span style="color: #0D0D0D; font-family: monospace;">${leadData.id}</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div style="background-color: #f8fafc; padding: 20px; border-radius: 6px; border-left: 4px solid #F2C94C;">
+                <p style="margin: 0; font-size: 14px; color: #2E2E2E; line-height: 1.5;">
+                  ✅ Este lead ha sido guardado automáticamente en la base de datos<br>
+                  📧 Ha recibido el email con el acceso a Google Drive
+                </p>
+              </div>
+            </div>
+            
+            <!-- Footer -->
+            <div style="background-color: #0D0D0D; padding: 20px; text-align: center;">
+              <p style="color: #F2C94C; font-size: 12px; margin: 0;">
+                Sistema automático de captura de leads - Bestart Propiedades
+              </p>
+            </div>
           </div>
-          
-          <p style="font-size: 14px; color: #6b7280;">
-            Este lead ha sido guardado automáticamente en la base de datos y ha recibido el email con los PDFs.
-          </p>
         </body>
       </html>
     `;
@@ -198,7 +269,7 @@ const handler = async (req: Request): Promise<Response> => {
         },
         body: new URLSearchParams({
           from: `Sistema Bestart <noreply@${MAILGUN_DOMAIN}>`,
-          to: ADMIN_EMAIL,
+          to: 'contacto@bestart.cl',
           subject: `🎯 Nuevo Lead: ${name} (${email})`,
           html: adminEmailHtml,
         }),
