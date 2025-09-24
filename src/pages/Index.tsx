@@ -91,15 +91,17 @@ const Index = () => {
               <div className="space-y-8">
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
                   <h2 className="text-2xl font-bold text-bestart-white mb-4">
-                    ¡Gracias! Aquí tienes tu e-book
+                    ¡Perfecto! 🎯
                   </h2>
-                  <a 
-                    href="/7-claves-vender-propiedad.pdf" 
-                    download
-                    className="inline-flex items-center gap-2 bg-bestart-primary text-bestart-dark px-6 py-3 rounded-xl font-semibold hover:bg-bestart-primary/90 transition-all duration-300"
-                  >
-                    📥 Descargar E-book
-                  </a>
+                  <div className="bg-green-500/20 border border-green-400/30 rounded-xl p-6 text-center">
+                    <div className="text-4xl mb-3">📧</div>
+                    <p className="text-lg font-semibold text-bestart-white mb-2">
+                      Te hemos enviado el link de Google Drive a tu correo
+                    </p>
+                    <p className="text-bestart-white/80 text-sm">
+                      Revisa tu bandeja de entrada (y spam por si acaso)
+                    </p>
+                  </div>
                 </div>
                 <YouTubeVideo />
               </div>
