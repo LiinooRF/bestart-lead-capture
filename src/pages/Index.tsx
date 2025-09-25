@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { LeadCaptureForm } from "@/components/LeadCaptureForm";
 import { YouTubeVideo } from "@/components/YouTubeVideo";
 import { AgentSection } from "@/components/AgentSection";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -191,6 +192,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* WhatsApp Contact Section */}
+      <WhatsAppButton />
 
       <Footer />
     </div>
