@@ -109,11 +109,21 @@ const handler = async (req: Request): Promise<Response> => {
         <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; background-color: #0D0D0D; color: #2E2E2E;">
           <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
             <!-- Header with Bestart branding -->
-            <div style="background: linear-gradient(135deg, #0D0D0D, rgba(242, 201, 76, 0.15), #0D0D0D); padding: 40px 30px; text-align: center;">
-              <div style="background-color: #F2C94C; display: inline-block; padding: 15px 30px; border-radius: 8px; margin-bottom: 20px;">
-                <h1 style="margin: 0; color: #0D0D0D; font-size: 24px; font-weight: 700; letter-spacing: 2px;">BESTART</h1>
+            <div style="background-color: #0D0D0D; padding: 50px 30px; text-align: center; position: relative;">
+              <!-- Logo section -->
+              <div style="margin-bottom: 30px;">
+                <div style="background-color: #F2C94C; display: inline-block; padding: 20px 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(242, 201, 76, 0.3);">
+                  <h1 style="margin: 0; color: #0D0D0D; font-size: 28px; font-weight: 800; letter-spacing: 3px;">BESTART</h1>
+                </div>
               </div>
-              <h2 style="margin: 0; color: #F2C94C; font-size: 28px; font-weight: 600;">¡Gracias por tu interés, ${name}!</h2>
+              <!-- Welcome message -->
+              <div style="max-width: 500px; margin: 0 auto;">
+                <h2 style="margin: 0 0 15px 0; color: #ffffff; font-size: 32px; font-weight: 700; line-height: 1.2;">¡Hola ${name}!</h2>
+                <p style="margin: 0; color: #F2C94C; font-size: 18px; font-weight: 500; opacity: 0.9;">Tu e-book gratuito está listo para descargar</p>
+              </div>
+              <!-- Decorative element -->
+              <div style="position: absolute; top: 20px; right: 30px; font-size: 40px; opacity: 0.1;">📚</div>
+              <div style="position: absolute; bottom: 20px; left: 30px; font-size: 40px; opacity: 0.1;">🏠</div>
             </div>
             
             <!-- Main content -->
@@ -269,7 +279,7 @@ const handler = async (req: Request): Promise<Response> => {
         },
         body: new URLSearchParams({
           from: `Sistema Bestart <noreply@${MAILGUN_DOMAIN}>`,
-          to: 'contacto@bestart.cl',
+          to: 'bestart1@bestart.cl',
           subject: `🎯 Nuevo Lead: ${name} (${email})`,
           html: adminEmailHtml,
         }),
@@ -284,10 +294,11 @@ const handler = async (req: Request): Promise<Response> => {
     // Check if emails were sent successfully
     let emailErrors = [];
     for (let i = 0; i < emailResults.length; i++) {
-      if (emailResults[i].status === 'rejected') {
-        emailErrors.push(emailResults[i].reason);
-      } else if (emailResults[i].status === 'fulfilled') {
-        const response = emailResults[i].value as Response;
+      const result = emailResults[i];
+      if (result.status === 'rejected') {
+        emailErrors.push(result.reason);
+      } else if (result.status === 'fulfilled') {
+        const response = result.value;
         if (!response.ok) {
           const errorText = await response.text();
           emailErrors.push(`Email ${i + 1} failed: ${errorText}`);
