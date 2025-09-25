@@ -90,13 +90,12 @@ const handler = async (req: Request): Promise<Response> => {
     // Prepare emails
     console.log('Preparing emails...');
 
-    // Google Drive links (you can update these with your actual links)
+    // Google Drive links
     const googleDriveLinks = [
       {
         title: "7 Claves para Vender Bien tu Propiedad",
-        url: "https://drive.google.com/file/d/YOUR_FILE_ID_HERE/view?usp=sharing"
+        url: "https://drive.google.com/file/d/1OJoIfiw6wQsxWpPI9AnlHNKMGaqdTr02/view?usp=drive_link"
       }
-      // Add more PDF/ebook links here as needed
     ];
 
     // Email to user with PDF links
