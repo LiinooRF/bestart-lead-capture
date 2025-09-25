@@ -41,14 +41,10 @@ export function AgentSection() {
                 <div className="space-y-8">
                   
                   {/* Stats */}
-                  <div className="grid grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 gap-6">
                     <div className="text-center p-6 bg-gradient-yellow rounded-2xl text-bestart-dark">
                       <div className="text-3xl font-bold">7+</div>
                       <div className="text-sm font-medium">Años de experiencia</div>
-                    </div>
-                    <div className="text-center p-6 bg-bestart-white rounded-2xl shadow-soft border border-bestart-primary/10">
-                      <div className="text-3xl font-bold text-bestart-primary">500+</div>
-                      <div className="text-sm font-medium text-bestart-gray">Propiedades vendidas</div>
                     </div>
                   </div>
 
