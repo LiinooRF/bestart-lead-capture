@@ -27,7 +27,7 @@ export function AgentSection() {
             Constructor Civil • Ingeniero Industrial
           </p>
           <p className="text-xl text-bestart-gray max-w-2xl mx-auto">
-            Tu experto en propiedades con más de años en el mercado inmobiliario
+            Experto en propiedades con más de años en el mercado inmobiliario
           </p>
         </div>
 
