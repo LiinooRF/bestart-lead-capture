@@ -27,7 +27,7 @@ export function AgentSection() {
             Constructor Civil • Ingeniero Industrial
           </p>
           <p className="text-xl text-bestart-gray max-w-2xl mx-auto">
-            Tu experto en propiedades con más de 7 años transformando el mercado inmobiliario
+            Tu experto en propiedades con más de años en el mercado inmobiliario
           </p>
         </div>
 
@@ -63,7 +63,7 @@ export function AgentSection() {
 
                   {/* Specializations */}
                   <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-bestart-primary">En estos 7 años he dominado:</h3>
+                    <h3 className="text-xl font-bold text-bestart-primary">En estos años he dominado:</h3>
                     <div className="grid grid-cols-1 gap-3">
                       {[
                         "Cómo preparar una propiedad para vender rápido",
@@ -112,7 +112,7 @@ export function AgentSection() {
         <div className="mt-16 text-center">
           <div className="bg-gradient-yellow text-bestart-dark rounded-2xl p-8 max-w-3xl mx-auto shadow-yellow">
             <blockquote className="text-xl font-medium mb-4">
-              "Después de 7 años vendiendo propiedades, decidí crear Bestart para hacer las cosas como deben ser: 
+              "Después de años vendiendo propiedades, decidí crear Bestart para hacer las cosas como deben ser: 
               rápido, honesto y rentable para el vendedor."
             </blockquote>
             <div className="font-bold">- Fernando Borjas W., Fundador de Bestart</div>
