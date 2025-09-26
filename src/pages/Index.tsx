@@ -29,9 +29,11 @@ const Index = () => {
         {/* Bestart Logo - Top Left - Responsive positioning */}
         <div className="absolute top-4 left-4 md:top-8 md:left-8 z-20">
           <div className="backdrop-blur-sm rounded-2xl px-3 py-2 md:px-6 md:py-4">
-            <img src="/bestart-logo-complete.png" alt="Bestart Propiedades" className="h-6 md:h-10 w-auto drop-shadow-lg" style={{
-            filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.8))'
-          }} />
+            <a href="https://bestart.cl/" target="_blank" rel="noopener noreferrer">
+              <img src="/bestart-logo-complete.png" alt="Bestart Propiedades" className="h-6 md:h-10 w-auto drop-shadow-lg hover:scale-105 transition-transform duration-200" style={{
+                filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.8))'
+              }} />
+            </a>
           </div>
         </div>
         
