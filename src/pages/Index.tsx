@@ -31,8 +31,8 @@ const Index = () => {
           <div className="backdrop-blur-sm rounded-2xl px-3 py-2 md:px-6 md:py-4">
             <a href="https://bestart.cl/" target="_blank" rel="noopener noreferrer">
               <img src="/bestart-logo-complete.png" alt="Bestart Propiedades" className="h-6 md:h-10 w-auto drop-shadow-lg hover:scale-105 transition-transform duration-200" style={{
-                filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.8))'
-              }} />
+              filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.8))'
+            }} />
             </a>
           </div>
         </div>
@@ -91,10 +91,8 @@ const Index = () => {
                   {/* WhatsApp Section */}
                   <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/20">
                     <div className="text-center">
-                      <h3 className="text-xl sm:text-2xl font-bold text-bestart-white mb-4">
-                        ¿Tienes alguna pregunta?
-                      </h3>
-                      <p className="text-bestart-white/80 mb-6 text-sm sm:text-base">
+                      
+                      <p className="text-bestart-white/80 mb-6 text-sm font-bold sm:text-xl">
                         Si sientes que tu propiedad tiene potencial de mejorar su valor de venta, pero no tienes los recursos suficientes para invertir en ella...
                       </p>
                       <p className="text-bestart-white font-semibold mb-6 text-sm sm:text-base">
