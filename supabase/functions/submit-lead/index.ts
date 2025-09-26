@@ -165,7 +165,7 @@ const handler = async (req: Request): Promise<Response> => {
               <!-- WhatsApp button -->
               <div style="text-align: center; margin-top: 30px;">
                 <p style="color: #2E2E2E; font-size: 16px; margin-bottom: 20px;">
-                  ¿Tienes alguna pregunta? ¡Contáctanos directamente!
+                  Si sientes que tu propiedad tiene potencial de mejorar su valor de venta, pero no tienes los recursos suficientes para invertir en ella...
                 </p>
                 <a href="https://wa.me/56967968354?text=Hola,%20recibí%20el%20e-book%20y%20me%20gustaría%20obtener%20más%20información" style="display: inline-block; background: linear-gradient(135deg, #25D366, #128C7E); color: white; text-decoration: none; font-weight: 600; padding: 15px 30px; border-radius: 50px; font-size: 16px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); transition: all 0.3s ease;">
                   💬 Escribir por WhatsApp
