@@ -51,7 +51,7 @@ export function AgentSection() {
                   {/* Description */}
                   <div className="space-y-6">
                     <p className="text-lg text-bestart-gray leading-relaxed">
-                      <span className="font-semibold text-bestart-primary">Fundé Bestart</span> después de 7 años trabajando 
+                      <span className="font-semibold text-bestart-primary">Fundé Bestart</span> después de años trabajando 
                       en el mercado inmobiliario tradicional. Vi todos los errores que cometen los agentes y decidí hacer las cosas diferente.
                     </p>
                     
