@@ -291,7 +291,7 @@ const handler = async (req: Request): Promise<Response> => {
         },
         body: new URLSearchParams({
           from: `Sistema Bestart <noreply@${MAILGUN_DOMAIN}>`,
-          to: 'bestart1@bestart.cl',
+          to: 'bestartleads@gmail.com',
           subject: `🎯 Nuevo Lead: ${name} (${email})`,
           html: adminEmailHtml,
         }),
