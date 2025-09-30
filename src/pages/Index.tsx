@@ -48,7 +48,7 @@ const Index = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-bestart-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Después de 7 años vendiendo propiedades, he visto los errores posibles.
+            Después de 8 años vendiendo propiedades, he visto los errores posibles.
           </p>
           
           <p className="text-lg md:text-xl text-bestart-white/80 mb-12 max-w-3xl mx-auto">

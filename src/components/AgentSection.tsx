@@ -44,7 +44,7 @@ export function AgentSection() {
                   {/* Stats */}
                   <div className="grid grid-cols-1 gap-6">
                     <div className="text-center p-6 bg-gradient-yellow rounded-2xl text-bestart-dark">
-                      <div className="text-3xl font-bold">7+</div>
+                      <div className="text-3xl font-bold">8+</div>
                       <div className="text-sm font-medium">Años de experiencia</div>
                     </div>
                   </div>
