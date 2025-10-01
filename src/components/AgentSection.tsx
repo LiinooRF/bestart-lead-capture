@@ -16,7 +16,7 @@ export function AgentSection() {
               <img 
                 src="/bestart-logo-complete.png" 
                 alt="Bestart Propiedades" 
-                className="h-12 w-auto brightness-0 invert"
+                className="h-8 w-auto brightness-0 invert"
                 style={{ imageRendering: 'crisp-edges' }}
               />
             </div>
